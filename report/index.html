@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\JAVA_2020\Java_Programs\AntDemoPro.zip_expanded\JavaProjectThree\src\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="packageOne.ClassFour" hash-for-method="testFour">testFour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="packageOne.ClassOne" hash-for-method="testOne">testOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="packageOne.ClassThree" hash-for-method="testThree">testThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="packageOne.ClassTwo" hash-for-method="testTwo">testTwo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">packageOne.ClassFour</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFour">
+                  </a> <!-- testFour -->
+                  <span class="method-name">testFour</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=14.4162) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=10.7025) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=10.7025) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=24.6125) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=10.7025) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=24.6125) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=24.7625) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;DESKTOP-TRI96P4&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at packageOne.ClassFour.testFour(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=14.4162) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=10.7025) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=10.7025) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=24.6125) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.23249) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.54249) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.54249) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=10.5425) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=10.7025) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=24.6125) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=24.7625) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 30 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">packageOne.ClassTwo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTwo">
+                  </a> <!-- testTwo -->
+                  <span class="method-name">testTwo</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=24.0217) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.4464) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.4464) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=29.2964) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.4464) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=29.2964) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=29.4464) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;DESKTOP-TRI96P4&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at packageOne.ClassTwo.testTwo(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=24.0217) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.4464) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.4464) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=29.2964) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=7.41641) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=7.72641) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=7.72641) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.4464) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.4464) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=29.2964) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=29.4464) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 30 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">packageOne.ClassThree</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testThree">
+                  </a> <!-- testThree -->
+                  <span class="method-name">testThree</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=12.574) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=9.69389) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=9.69389) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=22.8239) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=9.69389) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=22.8239) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=22.8239) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;DESKTOP-TRI96P4&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at packageOne.ClassThree.testThree(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=12.574) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=9.69389) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=9.69389) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=22.8239) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=5.32389) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=5.63389) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=5.63389) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=9.69389) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=9.69389) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=22.8239) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=22.8239) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 30 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">packageOne.ClassOne</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOne">
+                  </a> <!-- testOne -->
+                  <span class="method-name">testOne</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=51.3047) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=19.0975) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=19.0975) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=32.2275) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=19.0975) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=32.2275) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=32.3875) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;DESKTOP-TRI96P4&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at packageOne.ClassOne.testOne(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) [GFX1-]: RcANGLE(no compositor window)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect WebRenderBridgeChild. (t=51.3047) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=19.0975) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=19.0975) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=32.2275) [GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0
+Crash Annotation GraphicsCriticalError: |[G0][GFX1-]: RcANGLE(no compositor window) (t=12.8475) |[G1][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=14.0975) |[G2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=14.0975) |[G3][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=19.0975) |[G4][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=19.0975) |[G5][GFX1-]: [D3D11] create swap chain failed: 0x887a0022, 0 (t=32.2275) |[G6][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN (t=32.3875) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 30 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\JAVA_2020\Java_Programs\AntDemoPro.zip_expanded\JavaProjectThree\src\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;TestOne&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;packageOne.ClassOne&quot;/&gt;
+      &lt;class name=&quot;packageOne.ClassTwo&quot;/&gt;
+      &lt;class name=&quot;packageOne.ClassThree&quot;/&gt;
+      &lt;class name=&quot;packageOne.ClassFour&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestOne --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestOne (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testOne')
+data.setCell(0, 2, 'packageOne.ClassOne')
+data.setCell(0, 3, 78275);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testThree')
+data.setCell(1, 2, 'packageOne.ClassThree')
+data.setCell(1, 3, 51238);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFour')
+data.setCell(2, 2, 'packageOne.ClassFour')
+data.setCell(2, 3, 49365);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testTwo')
+data.setCell(3, 2, 'packageOne.ClassTwo')
+data.setCell(3, 3, 49336);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">packageOne.ClassOne</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testOne</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">packageOne.ClassTwo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTwo</span>
+                <span class="method-start">78277 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">packageOne.ClassThree</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testThree</span>
+                <span class="method-start">127613 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">packageOne.ClassFour</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFour</span>
+                <span class="method-start">178852 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
